@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:dist="http://schemas.android.com/apk/distribution"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <dist:module
+            dist:instant="false"
+            dist:title="@string/title_kritor">
+        <dist:delivery>
+            <dist:on-demand/>
+        </dist:delivery>
+        <dist:fusing dist:include="false"/>
+    </dist:module>
+
+
+    <application
+            android:splitName="kritor"
+            android:hasCode="false"
+            tools:replace="android:hasCode">
+        <service
+                android:name=".MatrixService"
+                android:exported="false"/>
+    </application>
+</manifest>

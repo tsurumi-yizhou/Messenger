@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+            tools:node="merge">
+        <meta-data
+                android:name="theming-meta"
+                android:value="meta_013_messages"/>
+        <meta-data
+                android:name="theming-meta-define"
+                android:value="@xml/meta_013_messages"/>
+    </application>
+</manifest>
